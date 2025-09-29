@@ -1,19 +1,28 @@
 #include <stdio.h>
+int labsheet1(void);
+int labsheet2(void);
+int labsheet3(void);
+int labsheet4(void);
 
 int main(void) {
-    printf("This is meant to be the first line for a chocolate cake recipe\n");
-    printf("\n\nBut I cba just want to make sure this works");
-    printf("\n\nThey want an input now, string first");
-    char word[100];
-    int number;
-    char letter;
-    scanf("%s", &word);
-    printf("\n\ninteger second");
-    scanf("%d", &number);
-    printf("\n\ncharacter third");
-    scanf("%c", &letter);
-    printf("\nFinished - string is: %s", word);
-    printf("\nNumber is %d", number);
-    printf("\nCharacter third is: %c", letter);
-    return 0;
+
+    int sheetNumber;
+    printf("Which lab sheet do you want\n");
+    scanf("%d", &sheetNumber);
+    switch (sheetNumber) {
+        case 1:
+            labsheet1();
+            break;
+        case 2:
+            labsheet2();
+            break;
+        case 3:
+            labsheet3();
+            break;
+        case 4:
+            labsheet4();
+            break;
+
+    }
+
 }
